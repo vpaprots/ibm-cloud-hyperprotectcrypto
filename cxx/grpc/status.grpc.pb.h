@@ -36,9 +36,9 @@
 #include <grpcpp/impl/codegen/sync_stream.h>
 
 namespace grpc_impl {
-class Channel;
 class CompletionQueue;
 class ServerCompletionQueue;
+class ServerContext;
 }  // namespace grpc_impl
 
 namespace grpc {
@@ -46,10 +46,6 @@ namespace experimental {
 template <typename RequestT, typename ResponseT>
 class MessageAllocator;
 }  // namespace experimental
-}  // namespace grpc_impl
-
-namespace grpc {
-class ServerContext;
 }  // namespace grpc
 
 namespace google {
