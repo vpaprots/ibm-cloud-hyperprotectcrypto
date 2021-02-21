@@ -5,4 +5,5 @@
 # Visual Studio IDE
 .vscode
 
+cxx/build
 node_modules
